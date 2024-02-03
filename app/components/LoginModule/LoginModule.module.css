@@ -1,0 +1,21 @@
+/* Form Container */
+
+.formContainer {
+  @apply relative bg-slate-700 p-6 w-full max-w-96 h-96;
+}
+
+/* Input Box*/
+
+.inputBox {
+  @apply relative mt-8 w-full;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  @apply text-violet-300 text-sm -translate-y-8 ml-5;
+}
+
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+  @apply h-11;
+}
