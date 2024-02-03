@@ -3,11 +3,11 @@ import styles from './LoginModule.module.css';
 
 const LoginModule = () => {
   return (
-    <div className='relative overflow-hidden w-full max-w-96 flex justify-center align-middle shadow-lg'>
+    <div className='relative overflow-hidden w-full max-w-96 flex justify-center align-middle shadow-xl'>
       <div className={styles.formContainer}>
         <form
           action=''
-          className='flex flex-col absolute z-10 bg-slate-700 p-6 inset-0 5'
+          className='flex flex-col absolute z-10 bg-slate-700 p-6 inset-0.5'
           noValidate
         >
           <h2 className='font-bold text-2xl text-center text-violet-400'></h2>
