@@ -3,7 +3,7 @@ import LoginModule from './components/LoginModule/LoginModule';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center'>
+    <main className='flex min-h-screen flex-col items-center justify-center relative'>
       <LoginModule />
       <Image
         className='-z-10 bg-center bg-cover opacity-80'
