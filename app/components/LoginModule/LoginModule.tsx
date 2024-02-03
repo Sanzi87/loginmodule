@@ -1,7 +1,12 @@
+'use client';
 import Link from 'next/link';
+import Spinner from './Spinner';
+import ErrorMessage from '../ErrorMessage';
 import styles from './LoginModule.module.css';
+import { useState } from 'react';
 
 const LoginModule = () => {
+  const [isSubmitting, setSubmitting] = useState(false);
   return (
     <div className='relative overflow-hidden w-full max-w-96 flex justify-center align-middle shadow-xl'>
       <div className={styles.formContainer}>
@@ -48,7 +53,7 @@ const LoginModule = () => {
             </Link>
           </div>
           <button className='submitButton bg-violet-400 text-gray-700 active:bg-violet-300 border-none pz-3 py-3 w-full mt-3 rounded-full font-bold cursor-pointer'>
-            Login
+            {isSubmitting ? <Spinner /> : 'Login'}
           </button>
         </form>
       </div>
