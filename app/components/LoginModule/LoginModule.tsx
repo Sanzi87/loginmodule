@@ -49,7 +49,9 @@ const LoginModule = () => {
           className='flex flex-col absolute z-10 bg-slate-700 p-6 inset-0.5'
           noValidate
         >
-          <h2 className='font-bold text-2xl text-center text-violet-400'></h2>
+          <h2 className='font-bold text-2xl text-center text-violet-400'>
+            Login
+          </h2>
           <div className={styles.inputBox}>
             <input
               type='text'
@@ -93,7 +95,7 @@ const LoginModule = () => {
           </div>
           <button
             disabled={isSubmitting}
-            className='submitButton bg-violet-400 text-gray-700 active:bg-violet-300 border-none pz-3 py-3 w-full mt-3 rounded-full font-bold cursor-pointer'
+            className='submitButton bg-violet-400 text-gray-700 active:bg-violet-300 border-none p-3 w-full mt-3 rounded-full font-bold cursor-pointer'
           >
             {isSubmitting ? <Spinner /> : 'Login'}
           </button>
